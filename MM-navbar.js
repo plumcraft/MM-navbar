@@ -1,13 +1,13 @@
 /* Weather-Button */
 
 
-Module.register("MM-navbar",{
+Module.register("mmm-navbar",{
 
 	getScripts: function(){
-		return ["modules/MM-navbar/jquery-3.1.1.js"];
+		return ["modules/mmm-navbar/jquery-3.1.1.js"];
 	},
 	getStyles: function(){
-		return ["weather-icons.css", "navbar.css", "font-awesome.css"];
+		return ["weather-icons.css", "mmm-navbar.css", "font-awesome.css"];
 	},
 	notificationReceived: function(notification, payload, sender){
 		if (notification === 'DOM_OBJECTS_CREATED'){

@@ -34,8 +34,7 @@ Module.register("mmm-navbar",{
 		calendarbutton.className = "fa fa-calendar navbar";	
 		newsbutton.className = "fa fa-newspaper-o navbar";		
 
-		var forecast = MM.getModules().withClass('weatherforecast');
-		var weather = MM.getModules().withClass('currentweather');
+		var weather = MM.getModules().withClass('mmm-wunderground');
 		var calendar = MM.getModules().withClass('calendar');
 		var news = MM.getModules().withClass('newsfeed');
 	
@@ -45,11 +44,9 @@ Module.register("mmm-navbar",{
 	
 		$(weatherbutton).on("click", function(){
 			if(weatherhidden){
-				forecast[0].show();
 				weather[0].show();
 				weatherhidden = false;
 			}else{
-				forecast[0].hide();
 				weather[0].hide();
 				weatherhidden = true;
 			}

@@ -1,1 +1,1 @@
-{ module: 'mmm-navbar', position: 'fullscreen_above', classes: 'default' };
+{ module: 'mmm-navbar', position: 'fullscreen_above', classes: 'default' }
